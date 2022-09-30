@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 
+  color 
+  #27187E;   #10002B;
+  #758BFD;   #3C096C;
+  #AEB8FE;   #7B2CBF;
+  #F1F2F6;   #9D4EDD;
+  #FF8600;   #E0AAFF;
+  */
+  
+  section {
+    height: 100vh;
+    width: 100%;
+    background-color: #E0AAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #7B2CBF;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .heading{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: #f1f2f6;
+    background-color: #9D4EDD;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .converter {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Ubuntu";
+  }
+  .converter input,
+  .converter textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    font-family: "Ubuntu";
+    border: 1px solid #E0AAFF;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+
+  .converter input:hover,
+  .converter textarea:hover {
+    border-color: #7B2CBF;
+    box-shadow: 0px 0px 20px #7B2CBF;
+  }
+
+  .converter input:focus,
+  .converter textarea:focus {
+    border-color: #7B2CBF;
+    box-shadow: 0px 0px 20px #7B2CBF;
+  }
+
+  .converter-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-family: "Ubuntu";
+  }

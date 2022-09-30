@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* 
+  color 
+  #27187E;   #10002B;
+  #758BFD;   #3C096C;
+  #AEB8FE;   #7B2CBF;
+  #F1F2F6;   #9D4EDD;
+  #FF8600;   #E0AAFF;
+  */
+
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(Background.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 20px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	display: inline-block;
+	color: #fff;
+	border: 1px solid #7B2CBF;
+    border-radius: 8px;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: 0.8s;
+}
+.nav-area li a:hover {
+	background: #7B2CBF;
+    border-radius: 8px;
+	color: #fff;
+}
+.logo {
+	float: left;
+}
+.loader {
+	position: relative;
+  }
+  
+  .outer,
+  .middle,
+  .inner {
+	border: 3px solid transparent;
+	border-top-color: #3cefff;
+	border-right-color: #3cefff;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  }
+  
+  .outer {
+	width: 3.5em;
+	height: 3.5em;
+	margin-left: -1.75em;
+	margin-top: -1.75em;
+	animation: spin 2s linear infinite;
+  }
+  
+  .middle {
+	width: 2.1em;
+	height: 2.1em;
+	margin-left: -1.05em;
+	margin-top: -1.05em;
+	animation: spin 1.75s linear reverse infinite;
+  }
+  
+  .inner {
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: -0.4em;
+	margin-top: -0.4em;
+	animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+
+.logo img {
+    height: 43px;
+	padding: 11px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 15% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #7B2CBF;
+}
+.welcome-text a {
+	border: 1px solid #7B2CBF;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	color: #fff;
+    border-radius: 8px;
+	transition: 0.6s;
+}
+.welcome-text a:hover {
+	background: #7B2CBF;
+    border-radius: 8px;
+	color: #fff;
+}
+
+
+/* resposive */
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: 360px;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
